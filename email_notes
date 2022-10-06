@@ -1,0 +1,47 @@
+// Install Nodemailer via the following command:
+
+ npm install nodemailer --save or  yarn add nodemailer
+// Once completed, include it into your web application
+// Create Nodemailer transporter 
+// Set Nodemailer message options
+// Deliver a message with sendMail()
+
+// How to send emails in Node.js with Mailtrap Email API?
+// Before we dive into reviewing the rest of the Node.js email packages, it’s worth mentioning a new package that was just released in June of 2022.
+
+// Mailtrap’s very own sending package provides both sending and testing functionality, and we always aim at saving everyone time and simply making life easier.
+
+// With that in mind, it only made sense for us to make a package that allows developers to add a sending functionality to a Node.js application quickly.
+
+// Additionally, it offers integration with Mailtrap API and will be integrated with Nodemailer module in the near future. The API key and other useful resources can be found in this documentation. 
+
+// Install the Mailtrap package: 
+
+// yarn:
+
+yarn add mailtrap
+
+// npm:
+
+npm install mailtrap
+
+Install the template engine:
+
+npm:
+
+npm install email-templates pug
+
+yarn:
+
+yarn add email-templates pug
+
+We should create two files: subject and HTML body.
+
+subject.pug:
+= `Hi ${firstName} ${lastName}, happy to see you at My App!`
+html.pug:
+   h1 Hello #{firstName} #{lastName}
+    p.
+Welcome to My App! Now your test emails will be safe. We just need to make sure your account is real. 
+Please, click the button below and start using your account. 
+a(href='https://example.com/confirmation') Confirm!
