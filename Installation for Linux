@@ -1,0 +1,4 @@
+Step 1: Open your terminal or press Ctrl + Alt + T.
+Step 2: To install node.js use the following command: sudo apt install nodejs
+Step 3: Once installed, verify it by checking the installed version using the following command: node -v or node -version
+Step 4: sudo apt install npm && npm -v or npm –version
